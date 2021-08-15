@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a table</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body id="background-2" style="background-image: url('LosAngeles_drink_firefly_1-1200x510.jpg');">
+    <div id="top-part">
+        <h1>Family Night Pizza</h1>
+    </div>
+    <div id="container">
+        <!-- Name -->
+        <form action="#" id="name">
+            <h2 class="text-input">Name*</h2>
+            <input type="text" placeholder="Enter Your Name" id="name-input">
+        </form>
+        <!-- Email -->
+        <form action="#" id="form-email">
+                <h2  class="text-input">Email*</h2>
+                <input type="text" id="email-input" placeholder="Enter Email Adress" onkeydown="validationEmail()">
+                <span id="result-email"></span>
+        </form>
+        <!-- Date -->
+        <form id="form-date">
+            <h2 class="text-input">Date*</h2>
+            <input type="date" placeholder="yyyy-mm-dd" id="date-input">
+            <span id="result-date"></span>
+        </form>
+        <!-- Time -->
+        <form id="form-time">
+            <h2 class="text-input">Time*</h2>
+            <input type="time" id="time-input">
+            <span id="result-time"></span>
+        </form>
+        <!-- Numbers -->
+        <form id="form-seats">
+            <h2 class="text-input">Number*</h2>
+            <input type="number" id="seats-input">
+        </form>
+
+    </div>
+
+    <button id="enter">Book a table</button>
+
+    <script src="booking.js"></script>
+</body>
+
+</html>
